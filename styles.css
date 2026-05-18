@@ -47,6 +47,13 @@ a {
   backdrop-filter: blur(14px);
 }
 
+.site-header.on-light {
+  background: rgba(251, 250, 246, 0.94);
+  color: var(--ink);
+  box-shadow: 0 8px 28px rgba(16, 35, 31, 0.08);
+  backdrop-filter: blur(14px);
+}
+
 .brand {
   display: inline-flex;
   align-items: center;
@@ -299,6 +306,53 @@ textarea:focus {
   width: fit-content;
   border: 0;
   cursor: pointer;
+}
+
+.legal-page {
+  padding-top: 116px;
+}
+
+.legal-hero {
+  padding: clamp(72px, 9vw, 128px) clamp(20px, 6vw, 84px) clamp(44px, 7vw, 84px);
+  background: var(--deep);
+  color: var(--white);
+}
+
+.legal-hero h1 {
+  max-width: 920px;
+  margin-bottom: 0;
+}
+
+.legal-content {
+  display: grid;
+  gap: 38px;
+  max-width: 860px;
+  padding: clamp(56px, 8vw, 96px) clamp(20px, 6vw, 84px);
+}
+
+.legal-block {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 30px;
+}
+
+.legal-block:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.legal-block h2 {
+  margin-bottom: 14px;
+  font-size: clamp(28px, 3.2vw, 44px);
+}
+
+.legal-block p {
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.legal-block p:last-child {
+  margin-bottom: 0;
 }
 
 .footer {
