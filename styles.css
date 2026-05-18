@@ -208,7 +208,6 @@ h3 {
 .intro-copy,
 .about-copy p,
 .contact-copy p,
-.video-shell p,
 .service-item p {
   color: var(--muted);
   font-size: 18px;
@@ -257,48 +256,6 @@ h3 {
   background-image: url("https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1200&q=82");
   background-position: center;
   background-size: cover;
-}
-
-.video-note {
-  background: var(--deep);
-  color: var(--white);
-}
-
-.video-shell {
-  display: grid;
-  grid-template-columns: 160px minmax(0, 760px);
-  gap: clamp(28px, 6vw, 70px);
-  align-items: center;
-}
-
-.video-shell p {
-  color: rgba(255, 255, 255, 0.72);
-}
-
-.play-button {
-  width: 132px;
-  height: 132px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
-  background: transparent;
-  cursor: pointer;
-  transition: transform 220ms ease, background 220ms ease;
-}
-
-.play-button:hover {
-  background: rgba(255, 255, 255, 0.08);
-  transform: scale(1.04);
-}
-
-.play-button span {
-  display: block;
-  width: 0;
-  height: 0;
-  margin: auto;
-  border-top: 17px solid transparent;
-  border-bottom: 17px solid transparent;
-  border-left: 25px solid var(--white);
-  transform: translateX(4px);
 }
 
 .contact {
@@ -413,23 +370,13 @@ textarea:focus {
 
   .intro,
   .about,
-  .contact,
-  .video-shell {
+  .contact {
     grid-template-columns: 1fr;
   }
 
   .service-item {
     grid-template-columns: 1fr;
     gap: 8px;
-  }
-
-  .video-shell {
-    gap: 24px;
-  }
-
-  .play-button {
-    width: 96px;
-    height: 96px;
   }
 
   .footer {
